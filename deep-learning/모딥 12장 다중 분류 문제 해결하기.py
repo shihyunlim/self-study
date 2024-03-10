@@ -1,5 +1,5 @@
-## 아이리스 품종 예측하기
-```python
+# 아이리스 품종 예측하기
+
 from tensorflow.keras.models import Sequential
 from tenserflow.keras.layers import Dense
 from sklearn.preprocessing import LabelEncoder
@@ -43,4 +43,4 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 model.fit(X, Y_encoded, epochs=50, batch_size=1)
 
 print("\n Accuracy: %.4f" %(model.evaluate(X, Y_encoded)[1]))
-```
+
