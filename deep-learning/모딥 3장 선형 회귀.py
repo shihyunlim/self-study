@@ -1,9 +1,6 @@
 # 모딥 3장 선형 회귀
-> 개념은 velog에 정리되어 있음</br>
-  깃허브에는 코드만 올릴 거임
+## 최소 제곱법으로 예측 직선 구하기
 
-> 최소 제곱법으로 예측 직선 구하기
-```python
 import numpy as np
 
 # x값과 y값
@@ -66,4 +63,3 @@ for i in range(len(x)):
 
 # 최종 MSE 출력
 print("mse 최종값: " + str(mse_val(y, predict_result))
-```
