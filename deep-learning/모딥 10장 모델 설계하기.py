@@ -1,5 +1,5 @@
-## 폐암 수술 환자의 생존율 예측하기
-```python
+# 폐암 수술 환자의 생존율 예측하기
+
 # 딥러닝을 구동하는 데 필요한 케라스 함수 호출
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
@@ -27,4 +27,3 @@ model.add(Dense(1, activation='sigmoid')
 # 딥러닝 실행
 model.compile(loss='mean_squared_error', optimizer='adam', metrics=['accuracy'])
 model.fit(X, Y, epochs=100, batch_size=10)
-```
