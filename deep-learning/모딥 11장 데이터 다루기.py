@@ -1,5 +1,5 @@
-### 피마 인디언의 당뇨병 예측하기
-```python
+# 피마 인디언의 당뇨병 예측하기
+
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 import numpy as np
@@ -22,4 +22,4 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 model.fit(X, Y, epochs=200, batchsize=10)
 
 print("\n Accuracy: %.4" %(model.evaluate(X, Y)[1]))
-```
+
