@@ -1,7 +1,6 @@
-## 초음파 광물 예측하기
-> "학습셋과 테스트셋 구분" + "모델 저장과 재사용" 모두 적용한 코드!
+# 초음파 광물 예측하기
+## "학습셋과 테스트셋 구분" + "모델 저장과 재사용" 모두 적용한 코드!
 
-```python
 from keras.models import Sequential, load_model
 from keras.models import Dense
 from sklearn.preprocessing import LabelEncoder
@@ -87,4 +86,3 @@ for train, test in skf.split(X, Y):
     accuracy.append(k_accuracy)
     
 print("\n %.f fold accuracy:" %n_fold, accuracy)
-```
