@@ -1,5 +1,5 @@
-> 경사 하강법을 이용해 최적의 a와 b값을 구하여 최적의 예측 직선을 구하는 방법
-```python
+# 경사 하강법을 이용해 최적의 a와 b값을 구하여 최적의 예측 직선을 구하는 방법
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -105,4 +105,3 @@ for i in range(epochs): # 에포크 수만큼 반복
 
   if i % 100 = 0: # 100번 반복될 때마다 현재 a, b 값 출력
     print("epoch=%.f, 기울기1=%.04f, 기울기2=%.04f, 절편=%.04f" %(i, a1, a2, b))
-```
